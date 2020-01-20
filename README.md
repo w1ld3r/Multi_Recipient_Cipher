@@ -7,13 +7,13 @@ Each participant has an RSA-2048 key pair for the encryption / decryption and an
 
 ## Details
 - Protect file confidentiality:
- - Kc : random()
- - IV : random()
- - C = AES-CBC-256(input, Kc, IV)
- - RSA PKCS#1 OAEP
+    - Kc : random()
+    - IV : random()
+    - C = AES-CBC-256(input, Kc, IV)
+    - RSA PKCS#1 OAEP
 - Protect file integrity:
- - Sign the entire message to be sent
- - RSA PKCS#1 PSS
+    - Sign the entire message to be sent
+    - RSA PKCS#1 PSS
 
 ## File strucure
 SHA256(kpub-1) || RSA\_kpub-1(Kc) || ... || SHA256(kpub-N) || RSA\_kpub-N(Kc) || 0xDEADBEEF || IV || C || Sign
