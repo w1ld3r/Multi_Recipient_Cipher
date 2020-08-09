@@ -52,10 +52,6 @@ Print help:
 python3 multi_protect.py -h
 ```
 
-## Authors
-
-* **[x1n5h3n](https://github.com/x1n5h3n)**
-
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
